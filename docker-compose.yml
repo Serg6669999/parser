@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  db:
+    image: mysql
+    volumes:
+      - my-db:/var/lib/mysql
+    env_file:
+      - .env
+    ports:
+      - ${MYSQL_PORT}:${MYSQL_PORT}
+    restart: always
+
+volumes:
+  my-db:
