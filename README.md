@@ -14,4 +14,4 @@
     python run.py save test_prog1.csv
 
 # get data
-    python run.py get
+    python run.py get <file_name>
